@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="not-footer">
+    <header>
+      <a href="./index.html"><img class="logo" src="images/console.png" alt="" /></a>
+      <a href="./contact.html">Contact Us</a>
+    </header>
+
+    <div class="form-div">
+      <h1>Contact Us</h1>
+      <p class="center">
+        Fill up the from and we will get in contact with your concern soon!
+      </p>
+
+      <form id="info-form" action="https://httpbin.org/post" method="POST">
+        <p class="form-text">
+          *All the blanks should be filled
+        </p>
+        <label for="firstName" class='form-text'>First Name</label>
+        <input id="firstName" name="firstName" type="text" required placeholder="I believe you know this"
+          title="Enter your first name" class='form-text' />
+
+        <label for="lastName" class='form-text'>Last Name</label>
+        <input id="lastName" name="lastName" type="text" required placeholder="Your proud family name"
+          title="Enter your last name" class='form-text' />
+
+        <label for="info-email" class='form-text'>Email</label>
+        <input id="info-email" name="info-email" type="email" required autocomplete="email" placeholder="Your mailbox"
+          title="Enter your email" class='form-text' />
+
+        <label for="address" class='form-text'>Address</label>
+        <input id="address" name="address" type="text" required placeholder="Your current location"
+          title="Enter your address" class='form-text' />
+
+        <label for="city" class='form-text'>City</label>
+
+        <input list="city-datalist" id="city" name="city" type="text" required placeholder="The place you live now"
+          title="Enter your city" class='form-text' />
+        <datalist id="city-datalist">
+          <option value="Toronto"></option>
+          <option value="Montreal"></option>
+          <option value="Vancouver"></option>
+          <option value="Calgary"></option>
+          <option value="Edmonton"></option>
+          <option value="Ottawa"></option>
+          <option value="Winnipeg"></option>
+          <option value="Quebec City"></option>
+        </datalist>
+
+        <label for="postal-code" class='form-text'>Postal Code</label>
+        <input id="postal-code" name="postal-code" type="text" required autocomplete="postal-code" placeholder="A1A 2B2"
+          pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+          title="Enter your postal code in the right format (Eg: A1A 2B2)" class='form-text' />
+
+        <label for="phone" class='form-text'>Phone Number</label>
+        <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="647-XXX-XXXX"
+          pattern="^\({0,1}\d{3}\){0,1}[ -/]{0,1}\d{3}[ -]{0,1}\d{4}"
+          title="Enter your Canadian phone number in the right format (Eg: 647-XXX-XXXX)" class='form-text' />
+        <div id="phone-call">
+          <input id="phone-check" name="phone-check" type="checkbox" value="yes" checked />
+          <label for="phone-check" class='form-text'>Call this number.</label>
+        </div>
+
+        <p class='form-text'>This is a:</p>
+        <div id="radio">
+          <input id="radio-1" name="radio" type="radio" value="question" checked />
+          <label for="radio-1" class='form-text'>Question</label>
+          <input id="radio-2" name="radio" type="radio" value="comment" />
+          <label for="radio-2" class='form-text'>Comment</label>
+          <input id="radio-3" name="radio" type="radio" value="orderProblem" />
+          <label for="radio-3" class='form-text'>Order Problem</label>
+        </div>
+
+        <label id="order-num-label" for="order-num" hidden class='form-text'>Order Number</label>
+        <input id="order-num" name="order-num" type="text" placeholder="Fill in the order# came with your purchase"
+          pattern="\d{10}" title="Enter your order number (10 digits)" hidden class='form-text' />
+
+        <label for="message" class='form-text'>Tell us here</label>
+        <textarea id="message" name="message" required maxlength="1000"
+          placeholder="The maximum text for message will be 1000 characters"
+          title="Enter message with your concern in 1000 characters" class='form-text'></textarea>
+
+        <input name="name" type="hidden" value="Kuan-Chung Huang" />
+        <input class="submit" name="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <table width='100%'>
+      <tr>
+        <td width='33%'>
+
+        </td>
+        <td width='33%'>
+          <div class="external-link">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/ig.png"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/tw.png"></a>
+          </div>
+
+        </td>
+        <td width='33%'>
+          <div class="external-submit">
+            <form id="email-form" action="https://formspree.io/xlepvknk" method="POST" class="subscribe">
+              <input id=" footer-email" name="footer-email" type="email" required autocomplete="email"
+                title="Enter your email" size="24" placeholder="Add your email here" />
+              <input class="submit" name="submit" type="submit" value="Subscribe" />
+            </form>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+
+    <p>&copy; 2020 PS4 House. All rights reserved.</p>
+  </footer>
+
+  <script src="./contact.js"></script>
+</body>
+
+</html>

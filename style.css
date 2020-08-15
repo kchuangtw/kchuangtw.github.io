@@ -1,0 +1,373 @@
+/* Add any CSS you need to this file. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: monospace;
+  color: #ffffff;
+}
+.hidden {
+  display: none !important;
+}
+p {
+  padding: 5px 0;
+}
+.color-gray {
+  color: #767879;
+}
+.logo {
+  height: 50px;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color: #222629;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+}
+
+header {
+  background-color: #474646;
+  height: 70px;
+  border-bottom: 2px solid #0c159b;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  
+}
+
+.intro img {
+  max-height: 90vh;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.quote {
+  position: relative;
+  padding: 30px 15px;
+  background-color: #00021f;
+  border-top: 1px solid #0c159b;
+  border-bottom: 1px solid #0c159b;
+  box-shadow: 10px 0 20px #0c159b;
+  text-align: center;
+}
+
+.quote p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+a:visited,
+a:link {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+nav {
+  margin: 25px 0;
+  padding: 20px 20px 0;
+}
+nav p {
+  background-color: #565364;
+  padding: 5px 20px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 25px;
+}
+
+.nav-button {
+  cursor: pointer;
+  background-color: #400ca1;
+  border: 0;
+}
+
+#nav-categories {
+  background-color: #000080;
+  box-shadow: inset 0 2px 10px #000000;
+  display: none;
+  margin: 0 15px;
+  padding: 10px 0;
+  font-size: 1.2em;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+#nav-categories li {
+  display: block;
+  padding: 6px 20px 0;
+  
+}
+#nav-categories li a {
+  color: #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  font-family: fantasy;
+}
+#nav-categories span {
+  color: #cfcfcf;
+  padding: 0 5px 0;
+}
+#nav-categories li a:hover {
+  font-weight: bold;
+  text-shadow: blue;
+  box-shadow: inset 0 0 0 1px #3a7999;
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.main {
+  margin: 25px 0 0;
+  padding: 15px 20px 0;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: fantasy;
+}
+
+.form-div {
+  margin: 25px 0 0;
+  padding: 15px 20px 0;
+  font-family: fantasy;
+  font-size: 1em;
+  border-radius: 125px;
+  border: 0px double #02025a;
+
+}
+
+.form-text {
+  font-family: fantasy;
+  font-size: 1em;
+}
+
+.div-wrapping {
+  background-color: #0F0F0F;
+  border: 0px double #02025a;
+  border-radius: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.div-wrapping img {
+  object-fit: contain;
+  max-height: 450px;
+  width: 100%;
+  margin: auto;
+}
+.div-wrapping imgg {
+  max-height: 300px;
+  max-width: 300%;
+}
+
+figure {
+  background-color: #000000;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+figcaption {
+  padding: 3px 0 5px;
+  text-align: center;
+  font-size: large;
+}
+.game-info {
+  padding: 10px 15px;
+  align-content: left;
+  vertical-align: top;
+  
+}
+.game-info p {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.game-info b {
+  color: #cfcfcf;
+  width: 100%;
+  font-family: fantasy;
+}
+
+.title {
+  color: #ffffff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.game-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.game-price {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: fantasy;
+}
+.game-buttons button {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 15px #ffffff;
+  border-radius: 5px;
+  margin: 10px 15px;
+  padding: 5px 10px;
+}
+.game-buttons b {
+  color: #000000;
+  font-family: fantasy;
+  font-size: 1.2em;
+}
+.game-buttons p {
+  color: #cfcfcf;
+}
+footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+  border-top: 2px solid #060772;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer * {
+  margin: 3px;
+}
+.external-link * {
+  color: #86c232;
+}
+.external-link {
+  display: flex;
+  justify-content: center;
+}
+
+.external-submit {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+
+@media screen and (min-width: 750px) {
+  #products {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+  }
+
+  nav p {
+    cursor: default;
+  }
+  .nav-button {
+    display: none;
+  }
+  #nav-categories {
+    display: block !important;
+    font-size: 1.2em;
+  }
+  .div-wrapping {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .game-info {
+    display: block;
+    margin: auto 5px;
+  }
+  #info-form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 25px;
+  }
+  input,
+  textarea,
+  #phone-call {
+    grid-column: 2/3;
+  }
+  #radio > input {
+    grid-column: 1/2;
+  }
+
+  
+/* Form */
+#info-form {
+  margin: 20px auto 60px;
+  padding: 30px;
+  max-width: 600px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+#info-form:valid {
+  border: 0px solid #86c232;
+  box-shadow: 10px 10px 25px #61892f;
+}
+.center {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 1.5em;
+}
+input,
+textarea,
+#phone-call {
+  color: black;
+  padding: 3px;
+  margin: 4px 0;
+}
+#info-form > label {
+  margin-top: 10px;
+}
+textarea {
+  min-height: 10em;
+}
+#radio {
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin: 4px 0 10px;
+}
+#radio input {
+  margin: 5px 5px 0;
+}
+#radio-order {
+  margin: 5px 20px 0;
+  border: 0;
+}
+
+.submit {
+  background-color: #222629;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: fantasy;
+}
+
+.submit:hover{
+    opacity: 0.7;
+}
+
+}
