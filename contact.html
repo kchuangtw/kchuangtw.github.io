@@ -26,24 +26,24 @@
           *All the blanks should be filled
         </p>
         <label for="firstName" class='form-text'>First Name</label>
-        <input id="firstName" name="firstName" type="text" required placeholder="I believe you know this"
+        <input required id="firstName" name="firstName" type="text" placeholder="I believe you know this"
           title="Enter your first name" class='form-text' />
 
         <label for="lastName" class='form-text'>Last Name</label>
-        <input id="lastName" name="lastName" type="text" required placeholder="Your proud family name"
+        <input required id="lastName" name="lastName" type="text" placeholder="Your proud family name"
           title="Enter your last name" class='form-text' />
 
         <label for="info-email" class='form-text'>Email</label>
-        <input id="info-email" name="info-email" type="email" required autocomplete="email" placeholder="Your mailbox"
+        <input required id="info-email" name="info-email" type="email" autocomplete="on" placeholder="Your mailbox"
           title="Enter your email" class='form-text' />
 
         <label for="address" class='form-text'>Address</label>
-        <input id="address" name="address" type="text" required placeholder="Your current location"
+        <input required id="address" name="address" type="text" placeholder="Your current location"
           title="Enter your address" class='form-text' />
 
         <label for="city" class='form-text'>City</label>
 
-        <input list="city-datalist" id="city" name="city" type="text" required placeholder="The place you live now"
+        <input required list="city-datalist" id="city" name="city" type="text" placeholder="The place you live now"
           title="Enter your city" class='form-text' />
         <datalist id="city-datalist">
           <option value="Toronto"></option>
@@ -57,12 +57,12 @@
         </datalist>
 
         <label for="postal-code" class='form-text'>Postal Code</label>
-        <input id="postal-code" name="postal-code" type="text" required autocomplete="postal-code" placeholder="A1A 2B2"
+        <input required id="postal-code" name="postal-code" type="text" autocomplete="on" placeholder="A1B 2C3"
           pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
-          title="Enter your postal code in the right format (Eg: A1A 2B2)" class='form-text' />
+          title="Enter your postal code in the right format (Eg: A1B 2C3)" class='form-text' />
 
         <label for="phone" class='form-text'>Phone Number</label>
-        <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="647-XXX-XXXX"
+        <input required id="phone" name="phone" type="tel" autocomplete="on" placeholder="647-XXX-XXXX"
           pattern="^\({0,1}\d{3}\){0,1}[ -/]{0,1}\d{3}[ -]{0,1}\d{4}"
           title="Enter your Canadian phone number in the right format (Eg: 647-XXX-XXXX)" class='form-text' />
         <div id="phone-call">
@@ -85,7 +85,7 @@
           pattern="\d{10}" title="Enter your order number (10 digits)" hidden class='form-text' />
 
         <label for="message" class='form-text'>Tell us here</label>
-        <textarea id="message" name="message" required maxlength="1000"
+        <textarea required id="message" name="message" maxlength="1000"
           placeholder="The maximum text for message will be 1000 characters"
           title="Enter message with your concern in 1000 characters" class='form-text'></textarea>
 
@@ -111,8 +111,8 @@
         </td>
         <td width='33%'>
           <div class="external-submit">
-            <form id="email-form" action="https://formspree.io/xlepvknk" method="POST" class="subscribe">
-              <input id=" footer-email" name="footer-email" type="email" required autocomplete="email"
+            <form id="email-form" action="https://formspree.io/xlepvknk" method="POST">
+              <input required id=" footer-email" name="footer-email" type="email" autocomplete="on"
                 title="Enter your email" size="24" placeholder="Add your email here" />
               <input class="submit" name="submit" type="submit" value="Subscribe" />
             </form>
