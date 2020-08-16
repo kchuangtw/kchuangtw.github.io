@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-
   <link rel="stylesheet" href="./style.css" type="text/css" />
   <title>Contact</title>
 </head>
@@ -22,27 +21,33 @@
       </p>
 
       <form id="info-form" action="https://httpbin.org/post" method="POST">
+
         <p class="form-text">
           *All the blanks should be filled
         </p>
+
+        <!--First name-->
         <label for="firstName" class='form-text'>First Name</label>
         <input required id="firstName" name="firstName" type="text" placeholder="I believe you know this"
           title="Enter your first name" class='form-text' />
 
+        <!--Last name-->
         <label for="lastName" class='form-text'>Last Name</label>
         <input required id="lastName" name="lastName" type="text" placeholder="Your proud family name"
           title="Enter your last name" class='form-text' />
 
+        <!--email-->
         <label for="info-email" class='form-text'>Email</label>
         <input required id="info-email" name="info-email" type="email" autocomplete="on" placeholder="Your mailbox"
           title="Enter your email" class='form-text' />
 
+        <!--Address-->
         <label for="address" class='form-text'>Address</label>
         <input required id="address" name="address" type="text" placeholder="Your current location"
           title="Enter your address" class='form-text' />
 
+        <!--City-->
         <label for="city" class='form-text'>City</label>
-
         <input required list="city-datalist" id="city" name="city" type="text" placeholder="The place you live now"
           title="Enter your city" class='form-text' />
         <datalist id="city-datalist">
@@ -56,20 +61,23 @@
           <option value="Quebec City"></option>
         </datalist>
 
+        <!--Postal Code-->
         <label for="postal-code" class='form-text'>Postal Code</label>
         <input required id="postal-code" name="postal-code" type="text" autocomplete="on" placeholder="A1B 2C3"
           pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
-          title="Enter your postal code in the right format (Eg: A1B 2C3)" class='form-text' />
+          title="Enter your postal code as the following format (Eg: A1B 2C3)" class='form-text' />
 
+        <!--Phone-->
         <label for="phone" class='form-text'>Phone Number</label>
         <input required id="phone" name="phone" type="tel" autocomplete="on" placeholder="647-XXX-XXXX"
           pattern="^\({0,1}\d{3}\){0,1}[ -/]{0,1}\d{3}[ -]{0,1}\d{4}"
-          title="Enter your Canadian phone number in the right format (Eg: 647-XXX-XXXX)" class='form-text' />
+          title="Enter your phone number as the following format (Eg: 647-XXX-XXXX)" class='form-text' />
         <div id="phone-call">
           <input id="phone-check" name="phone-check" type="checkbox" value="yes" checked />
           <label for="phone-check" class='form-text'>Call this number.</label>
         </div>
 
+        <!--Form type-->
         <p class='form-text'>This is a:</p>
         <div id="radio">
           <input id="radio-1" name="radio" type="radio" value="question" checked />
@@ -80,15 +88,18 @@
           <label for="radio-3" class='form-text'>Order Problem</label>
         </div>
 
+        <!--Order number-->
         <label id="order-num-label" for="order-num" hidden class='form-text'>Order Number</label>
         <input id="order-num" name="order-num" type="text" placeholder="Fill in the order# came with your purchase"
           pattern="\d{10}" title="Enter your order number (10 digits)" hidden class='form-text' />
 
+        <!--Message-->
         <label for="message" class='form-text'>Tell us here</label>
         <textarea required id="message" name="message" maxlength="1000"
           placeholder="The maximum text for message will be 1000 characters"
           title="Enter message with your concern in 1000 characters" class='form-text'></textarea>
 
+        <!--Hidden-->
         <input name="name" type="hidden" value="Kuan-Chung Huang" />
         <input class="submit" name="submit" type="submit" value="Submit" />
       </form>
